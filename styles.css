@@ -35,12 +35,18 @@
     width: auto;
 }
 
-header button{
+header button a{
     font-size: 2vw;
     color: var(--verde-bosta);
     background-color: var(--amarelo-claro);
     padding: 1.5vw 1vw;
     border-radius: 1.5vw;
+}
+header button{
+    transition: transform 0.5s ease-in-out;
+}
+header button:hover{
+    transform: scale(1.1);
 }
 
 .subheader{
