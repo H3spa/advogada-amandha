@@ -20,6 +20,13 @@
     color: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+}
+
 
 
 .frase-efeito{
