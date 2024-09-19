@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'gothic';
+    src: url("fonts/GothicA1-Bold.ttf") format("truetype"),
+}
+@font-face {
+    font-family: 'capitalist';
+    src: url("fonts/CapitalisTypOasis.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ghotic', sans-serif;
+    font-weight: lighter;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.frase-efeito{
+    font-family: 'capitalist'
+}
+
+.oab-n {
+    font-family: 'Times New Roman', Times, serif
+}
