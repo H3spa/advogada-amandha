@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gothic';
-    src: url("fonts/GothicA1-Bold.ttf") format("truetype"),
+    src: url("fonts/GothicA1-Regular.ttf") format("truetype")
 }
 @font-face {
     font-family: 'capitalist';
@@ -10,8 +10,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'ghotic', sans-serif;
-    font-weight: lighter;
+    font-family: 'gothic', sans-serif;
+    font-weight: 100;
     border: none;
     font-size: 16px;
     box-sizing: border-box;
@@ -24,7 +24,9 @@ a {
     text-decoration: none;
     color: inherit;
     background: none;
+    display: block;
     border: none;
+    text-align: center;
 }
 
 

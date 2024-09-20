@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gothic';
-    src: url("fonts/GothicA1-Bold.ttf") format("truetype"),
+    src: url("fonts/GothicA1-Regular.ttf") format("truetype"),
 }
 @font-face {
     font-family: 'capitalist';
@@ -35,16 +35,21 @@
     width: auto;
 }
 
-header button a{
+header button {
     font-size: 2vw;
     color: var(--verde-bosta);
     background-color: var(--amarelo-claro);
     padding: 1.5vw 1vw;
     border-radius: 1.5vw;
-}
-header button{
     transition: transform 0.5s ease-in-out;
+    border: none;
+    cursor: pointer;
 }
+
+header button a{
+    font-size: 2vw;
+}
+
 header button:hover{
     transform: scale(1.1);
 }
@@ -310,10 +315,8 @@ footer hr{
     #logoHeader{
         height: 50px;
     }
-
-    header button a{
-        width: 150px; /* Define a largura fixa do botão para dispositivos móveis */
-        font-size: 1rem;
+    header button {
+        width: 100px;
     }
 
     .subheader .welcome-message{
