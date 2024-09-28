@@ -144,10 +144,6 @@ button:hover{
     transition: transform 0.5s ease-in-out;
 }
 
-.conteiner-area img:hover{
-    transform: scale(1.2);
-}
-
 .typo-area{
     text-align: center;
 }
