@@ -41,22 +41,19 @@
     width: auto;
 }
 
-button {
+.btn-hover {
     font-size: 1.5vw;
     color: var(--verde-bosta);
     background-color: var(--amarelo-claro);
-    padding: 1.5vw 1vw;
-    border-radius: 1.5vw;
+    padding: 1.1vw 1vw;
+    border-radius: 1vw;
     transition: transform 0.5s ease-in-out;
     border: none;
     cursor: pointer;
 }
 
-button a{
-    font-size: 2vw;
-}
 
-button:hover{
+.btn-hover:hover{
     transform: scale(1.1);
 }
 
@@ -105,6 +102,7 @@ button:hover{
     width: fit-content;
     padding: 150px 150px;
 }
+
 .frase-efeito{
     font-size: 2vw;
     max-width: 350px;
@@ -116,13 +114,16 @@ button:hover{
 .conteiner-deusa button{
     width: fit-content;
     height: auto;
+    font-size: 14px;
 }
+
 
 .areas{
     display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: nowrap;
     background-color: var(--verde-claro);
-    justify-content: center;
-    gap: 30px;
     padding: 45px 0;
 }
 
@@ -132,11 +133,9 @@ button:hover{
     gap: 10px;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
+    flex: 0 0 25%;
 }
 
-.conteiner-area:hover{
-    transform: scale(1.15);
-}
 
 .conteiner-area img {
     height: 70px;
@@ -155,8 +154,8 @@ button:hover{
     color: var(--verde-escuro);
 }
 .descricao-area{
-    max-width: 20vw;
     font-family: 'gothic-normal';
+    text-align: center;
 }
 
 .conteiner-atendimento{
@@ -179,7 +178,7 @@ button:hover{
 .conteiner-info{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px 10px;
     gap: 3px;
     color: var(--verde-escuro);
 }
@@ -247,29 +246,31 @@ button:hover{
 }
 
 
-
-.Btn{
+.btn{
+    display: inline-block;
     position: absolute; /* para que eu possa dizer onde o elemento irá ficar independente dos outros */
-    z-index: 1; /* para que o elemento fique acima dos outros */
     top: 50%;
-    transform: translate(0, -50%);
-    font-size: 3vw;
+    z-index: 1;
+    transform: translateY(-50%);
     cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    height: 6vw;
-    padding: 0 15px;
-    background-color: var(--verde-escuro-pouco-transparente);
+    background-color: transparent;
+    padding: 10px;
 }
 
+.btn img{
+    width: 50px;
+    height: auto;
+}
 .next {
-    right: 0%;
+    right: 0px;
 }
 
 .prev {
-    left: 0%;
+    left: 0px;
 }
-
+.prev img{
+    transform: scaleX(-1);
+}
 footer {
     display: flex;
     flex-direction: column;

@@ -16,6 +16,14 @@
 html {
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    font-size: inherit;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,14 +37,7 @@ html {
     color: inherit;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    background: none;
-    display: block;
-    border: none;
-    text-align: center;
-}
+
 
 .frase-efeito{
     font-family: 'capitalist'
