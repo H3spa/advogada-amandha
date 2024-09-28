@@ -145,7 +145,6 @@
 
 .typo-area{
     text-align: center;
-    width: 90%;
 }
 
 .nome-area{
@@ -154,9 +153,14 @@
     letter-spacing: 2px;
     color: var(--verde-escuro);
 }
+
+.nome-area-menor{
+    font-size: 1.8vw;
+}
 .descricao-area{
     font-family: 'gothic-normal';
     text-align: center;
+    width: 90%;
 }
 
 .conteiner-atendimento{
