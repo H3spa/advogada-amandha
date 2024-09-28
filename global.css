@@ -1,16 +1,25 @@
 @font-face {
-    font-family: 'gothic';
-    src: url("fonts/GothicA1-Regular.ttf") format("truetype")
+    font-family: 'gothic-normal';
+    src: url("fonts/CenturyGothic/CenturyGothic-normal.ttf") format("truetype"),
 }
 @font-face {
     font-family: 'capitalist';
     src: url("fonts/CapitalisTypOasis.ttf") format("truetype");
 }
 
+
+@font-face{
+    font-family: 'gothic-bold';
+    src: url("fonts/CenturyGothic/CenturyGothic-bold.TTF") format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
-    font-family: 'gothic', sans-serif;
+    font-family: 'gothic-normal', sans-serif;
     font-weight: 100;
     border: none;
     font-size: 16px;
@@ -28,8 +37,6 @@ a {
     border: none;
     text-align: center;
 }
-
-
 
 .frase-efeito{
     font-family: 'capitalist'

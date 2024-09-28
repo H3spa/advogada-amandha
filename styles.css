@@ -1,10 +1,16 @@
 @font-face {
-    font-family: 'gothic';
-    src: url("fonts/GothicA1-Regular.ttf") format("truetype"),
+    font-family: 'gothic-normal';
+    src: url("fonts/CenturyGothic/CenturyGothic-normal.ttf") format("truetype"),
 }
 @font-face {
     font-family: 'capitalist';
     src: url("fonts/CapitalisTypOasis.ttf") format("truetype");
+}
+
+
+@font-face{
+    font-family: 'gothic-bold';
+    src: url("fonts/CenturyGothic/CenturyGothic-bold.TTF") format("truetype");
 }
 
 :root{
@@ -35,8 +41,8 @@
     width: auto;
 }
 
-header button {
-    font-size: 2vw;
+button {
+    font-size: 1.5vw;
     color: var(--verde-bosta);
     background-color: var(--amarelo-claro);
     padding: 1.5vw 1vw;
@@ -46,11 +52,11 @@ header button {
     cursor: pointer;
 }
 
-header button a{
+button a{
     font-size: 2vw;
 }
 
-header button:hover{
+button:hover{
     transform: scale(1.1);
 }
 
@@ -66,7 +72,7 @@ header button:hover{
 }
 
 .subheader .welcome-message{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 
 }
 
@@ -76,141 +82,175 @@ header button:hover{
 }
 
 .subheader ul li{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    background-image: url("models/images/justica_invertida.svg");
+}
+
+.conteiner-deusa{
+    display: flex;
+    flex-direction: column;
+    background-image: url(models/images/deusa.jpg);
     background-size: cover;
-    padding: 1vw 2vw;
-    gap: 1.5vw;
+    background-blend-mode: color-dodge;
+    background-color: rgba(28,52,44,0.7);
 }
-
-.frase-efeito{
-    font-size: 2vw;
-    padding: 150px 60px;
-    max-width: 700px;
-    line-height: 170%;
-    letter-spacing: 10%;
-}
-
-.areas-atuacao {
-    display: flex;
-    position: relative;
-    height: 40vw;
-    overflow: hidden;
-    gap: 0.5%;
-}
-.area-direito {
-    display: flex;
-    flex-direction: column;
-    min-width: 33%;
-    height: 100%;
-    gap: 0.5vw;
-    transition: transform 0.5s ease-in-out;
-}
-.titulo-area {
-    font-size: 2vw;
-    font-weight: 400;
-}
-.area-img-descricao {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vw;
-
-/* se for pra dar problema apagar o que está acima #TODO*/
-
-    background-color: var(--verde-claro-transparente);
-    padding: 0.5vw;
-    height: 100%;
-}
-.area-img-descricao img {
-    width: 100%;
-    height: auto;
-}
-.area-img-descricao p{
-    font-size: 1.5vw;
-
-}
-
-.processo-atendimento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--amarelo-claro-transparente);
-    width: 100%;
-    height: auto;
-    border-radius: 1.5vw;
-    padding: 35px 0;
-}
-
-.quadro-passos{
-    display: flex;
-    height: auto;
-    width: 100%;
-    gap: 20vw;
-}
-.passos-cima {
-    justify-content: flex-start;
-    transform: translateX(10%);
-}
-.passos-baixo{
-    justify-content: flex-end;
-    transform: translateX(-10%);
-}
-
-.processo-atendimento hr{
-    height: 2px;
-    background: black;
-}
-
-
-.passo-linha {
+.conteiner-frase-botao{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    padding: 150px 150px;
+}
+.frase-efeito{
+    font-size: 2vw;
+    max-width: 350px;
+    text-align: center;
+    line-height: 170%;
+    letter-spacing: 10%;
+    color: var(--amarelo-claro);
+}
+.conteiner-deusa button{
+    width: fit-content;
+    height: auto;
+}
+
+.areas{
+    display: flex;
+    background-color: var(--verde-claro);
+    justify-content: center;
+    gap: 30px;
+    padding: 45px 0;
+}
+
+.conteiner-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.conteiner-area:hover{
+    transform: scale(1.15);
+}
+
+.conteiner-area img {
+    height: 70px;
+    width: fit-content;
+    transition: transform 0.5s ease-in-out;
+}
+
+.conteiner-area img:hover{
+    transform: scale(1.2);
+}
+
+.typo-area{
+    text-align: center;
+}
+
+.nome-area{
+    font-size: 2vw;
+    font-family: 'gothic-bold';
+    letter-spacing: 2px;
+    color: var(--verde-escuro);
+}
+.descricao-area{
+    max-width: 20vw;
+    font-family: 'gothic-normal';
+}
+
+.conteiner-atendimento{
+    display: flex;
+    width: auto;
+    background-color: var(--amarelo-claro);
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 65px;
+}
+
+.conteiner-foto-info{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verde-claro);
     gap: 5px;
 }
 
-.passo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--verde-claro-transparente);
-    padding: 10px 15px;
-    border-radius: 20px;
-    width: 220px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform 0.5s ease;
-}
-.passo:hover{
-    transform: scale(1.1);
-}
-
-.linha-container {
+.conteiner-info{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha a bolinha verticalmente */
+    padding: 10px;
+    gap: 3px;
+    color: var(--verde-escuro);
+}
+.conteiner-info h1{
+    font-size: 20px;
+    font-family: 'gothic-bold';
+}
+.conteiner-info p{
+    font-size: 14px;
+    font-family: 'gothic-normal';
 }
 
-.bolinha {
-    width: 10px; /* Largura da bolinha */
-    height: 10px; /* Altura da bolinha */
-    background-color: black; /* Cor da bolinha */
-    border-radius: 50%; /* Torna a bolinha redonda */
+.passos-atendimento{
+    display: flex;
+    flex-direction: column;
+    font-family: 'gothic-bold';
+    gap: 20px;
+    align-items: center;
+    height: fit-content;
+}
+.passos-atendimento h3{
+    font-family: 'gothic-bold';
+    font-size: 23px;
+    letter-spacing: 2.5px;
+    color: var(--verde-escuro);
 }
 
-.linha-vertical{
-    width: 2px;
-    height: 50px;
+.step-line{
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-n{
+    display: flex;
+    background-color: var(--verde-claro);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+.conteiner-n p{
+    font-size: 30px;
+    font-family: 'gothic-bold';
+    color: var(--verde-escuro);
+}
+
+.step-line hr{
+    height: 2px;
+    width: 60px;
     background-color: black;
-
 }
+
+.step{
+    display: flex;
+    background-color: var(--verde-claro);
+    height: 70px;
+    width: 500px;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    color: var();
+}
+
+
 
 .Btn{
     position: absolute; /* para que eu possa dizer onde o elemento irá ficar independente dos outros */
@@ -241,7 +281,7 @@ footer {
     height: auto;
     color: var(--amarelo-claro);
     padding: 4vw 5vw;
-    gap: 1.5vw;
+    gap: 2.5vw;
 }
 
 .logo-contato{
@@ -272,9 +312,11 @@ footer {
     gap: 1vw;
 }
 .contato p{
-    font-size: 2vw;
+    font-size: 1.8vw;
     width: 100%;
     text-align: center;
+    font-family: 'gothic-normal';
+    letter-spacing: 1px;
 }
 
 .social-media-icons {
