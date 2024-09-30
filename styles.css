@@ -95,6 +95,7 @@
     background-blend-mode: color-dodge;
     background-color: rgba(28,52,44,0.7);
 }
+
 .conteiner-frase-botao{
     display: flex;
     flex-direction: column;
@@ -360,61 +361,92 @@ footer hr{
         height: 50px;
     }
     header button {
-        width: 100px;
+        width: 120px;
+    }
+    .btn-hover {
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 2vw;
+    }
+    .subheader{
+        padding: 3vw;
     }
 
     .subheader .welcome-message{
         font-size: 1rem;
+        width: 100px;
+        text-align: center;
     }
 
     .subheader ul{
-        gap: 10px;
+        gap: 1vw;
     }
 
     .subheader ul li{
         font-size: 1rem;
     }
  
+    .conteiner-deusa{
+        background-size: cover;
+        align-items: center;
+    }
+
+    .conteiner-frase-botao{
+        padding: 100px 100px;
+    }
     .frase-efeito{
         font-size: 0.75rem;
-        width: 500px;
+        max-width: 200px;
     }
-    .areas-atuacao {
+ 
+    .areas{
         flex-direction: column;
-        height: auto;
-        gap: 2vw;
+        align-items: center;
+        gap: 10px;
     }
 
-
-    .titulo-area {
-        font-size: 4vw;
+    
+    .typo-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nome-area{
+        font-size: 5vw;
+        
     }
 
-    .area-img-descricao {
-        padding: 1.5vw;
+    .conteiner-atendimento{
+        flex-direction: column;
     }
-
-
-    .area-img-descricao p{
-        font-size: 3vw;
+    .passos-atendimento{
+        gap: 15px;
     }
-    .Btn{
-        display: none;
-        pointer-events: none;
-    }
-    .quadro-passos {
-        gap: 6vw;
-    }
-    .passo{
+    .passos-atendimento h3{
         font-size: 16px;
-        height: auto;
-        width: 150px;
     }
-    .passos-cima{
-        transform: translateX(6%);
+
+    .conteiner-n{
+        width: 40px;
+        height: 40px;
     }
-    .passos-baixo{
-        transform: translateX(-6%);
+    .conteiner-n p{
+        font-size: 20px;
+    }
+    .step-line hr{
+        width: 20px;
+        height: 1px;
+    }
+    .step{
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        line-height: 100%;
+    }
+    .btn{
+        display: none;
     }
     .A-logo img {
         width: 15vw;
